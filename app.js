@@ -2,6 +2,7 @@ const imgs = document.querySelectorAll('img')
 const randomSrc = ['./images/dice1.png', './images/dice2.png', './images/dice3.png', './images/dice4.png', './images/dice5.png', './images/dice6.png']
 const h1 = document.querySelector('h1')
 const button = document.createElement('button')
+const buttonDiv = document.createElement('div')
 
 const randomImg = () => randomSrc[Math.floor(Math.random() * randomSrc.length)]
 
@@ -27,14 +28,14 @@ const shuffle = () => {
 }
 
 button.innerText = 'Shake Again!'
-button.style.marginLeft = '46%'
-button.style.marginTop = '5%'
+button.style.marginTop = '4%'
 button.style.padding = '10px'
 button.style.borderRadius = '5px'
 button.style.backgroundColor = 'rgb(156, 0, 0)'
 button.style.color = 'white'
 
-document.body.appendChild(button)
+buttonDiv.appendChild(button)
+document.body.querySelector('.container').appendChild(buttonDiv)
 
 button.addEventListener('click', shuffle)
 shuffle()
