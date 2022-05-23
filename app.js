@@ -19,7 +19,7 @@ const shuffle = () => {
     }
     let img1 = randomSrc.indexOf(indexArray[0])
     let img2 = randomSrc.indexOf(indexArray[1])
-    console.log(img1)
+
     img1 > img2 ? h1.innerText = '🚩Player 1 Wins!'
         : img1 < img2 ? h1.innerText = '🚩Player 2 Wins!'
             : h1.innerText = 'Draw!'
