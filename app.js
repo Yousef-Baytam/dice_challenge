@@ -17,6 +17,15 @@ const shuffle = () => {
             : h1.innerText = 'Draw!'
 }
 
+button.innerText = 'Shake Again!'
+button.style.marginLeft = '46%'
+button.style.marginTop = '5%'
+button.style.padding = '10px'
+button.style.borderRadius = '5px'
+button.style.backgroundColor = 'rgb(156, 0, 0)'
+button.style.color = 'white'
+
 document.body.appendChild(button)
 
+button.addEventListener('click', shuffle)
 shuffle()
