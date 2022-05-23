@@ -40,6 +40,8 @@ footer {
 
 }
 
+/* by colt steele Dice_exercise, The Modern React Bootcamp (Hooks, Context, NextJS, Router), 2021 */
+
 .shaking {
   animation-name: wobble;
   animation-duration: 1s;
